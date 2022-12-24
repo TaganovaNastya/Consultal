@@ -19,8 +19,7 @@ body{
 
 .wrapper {
     max-width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
+    
     
 }
 .begin{
@@ -61,6 +60,9 @@ h2{
     margin-right: auto;
     padding-top: 8rem;
     /*padding-bottom: 1rem;*/
+}
+.cona{
+    color: #252B42;
 }
 .learn{
     font-weight: 700;
@@ -124,8 +126,8 @@ ul{
     margin-right: 4.3rem;
 }
 .card01{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     align-items: center;
     padding: 0px;
     gap: 30px;
@@ -159,6 +161,7 @@ ul{
     padding: 3.5rem 4rem;
     margin-bottom: 3rem;
     width: auto;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.144);
 }
 li {
     list-style-type: none; /* Убираем маркеры */
@@ -224,7 +227,7 @@ blockquote{
     margin-right: 2.4rem;
     padding: 0px;
     border: 0em;
-
+    
 }
 .search{
     display: flex;
@@ -241,7 +244,7 @@ button{
     line-height: 2;
     color: var(--primary-color2);
     background-color: #FF7B47;
-    
+    border: 1px;
 }
 .play{
     
@@ -251,11 +254,20 @@ button{
     margin:0 auto;
     align-items: center;
     display: block;
-    
+    position: absolute;
+    top: 221px;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
+}
+.dis{
+    position: relative;
+    Height:442px;
+    
 }
 .who{
     background: #F3F3F3;
+    padding-bottom: 174px;
 }
 .media{
     margin-left: 7rem;
@@ -269,8 +281,10 @@ button{
     align-items: center;
     max-width: 100%;
     display: block;
-    z-index: -1;
     
+}
+.video1{
+    display: none;
 }
 .comment{
     background: #FAFAFA;
@@ -452,6 +466,27 @@ label{
     margin: 0em;
 }
 
+.gradient {
+    position: relative;   
+    line-height: 0;
+}
+.gradient:after {
+    content: "";
+    display: block;
+    width: 306px;
+    height: 442px; 
+    position: absolute;
+    transform: translate(-50%);
+    top: 0;  
+    left: 50%;   
+    
+    background: transparent;
+    background-image: linear-gradient(180deg, 
+    rgba(0, 0, 0, 0) 14.58%, 
+    rgba(56, 56, 56, 0.84) 100%);
+    opacity: 0.8;
+}
+
 footer{
     background-color: #252B42;
     display: flex;
@@ -555,7 +590,51 @@ input{
 hr{
     display: none;
 }
+.ead{
+    background: none;
+}
+.glo{
+    height: 104px;
+    background:none
+}
+body > footer {
+    position: sticky;
+    top: 100vh;}
 
+.formreg{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #252B42;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+fieldset{
+    border: 1px solid #252B42;
+    border-radius: 5px;
+    padding: 2rem;
+}
+legend{
+    margin-bottom: 1rem;
+}
+.paddin{
+    padding: 0px 15px
+}
+
+@media(min-width: 768px) {
+    .card01{
+    grid-template-columns: repeat(2,1fr);
+}
+.ggrim{
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding-bottom: 0px;
+}
+.block{
+    margin: 0px;
+}
+    }
 
 @media(min-width: 1050px) {
     .Consultal{
@@ -678,12 +757,14 @@ hr{
     margin: 0 27rem;
 }
 .card01{
-    flex-direction: row;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .wrapper{
     padding-left: 1.6rem;
     padding-right: 1.6rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .h2h2{
@@ -759,6 +840,48 @@ hr{
 input{
     width: auto;
 }
+footer{
+    padding: 0em;
+}
+.video1{
+    display: inherit;
+    margin:0 auto;
+    align-items: center;
+    max-width: 100%;
+    display: block;
+}
+/*.gradient{
+    display: block;  
+	position: absolute;
+    background: linear-gradient(180deg, 
+    rgba(0, 0, 0, 0) 14.58%, 
+    rgba(56, 56, 56, 0.84) 100%);
+}*/
+
+.gradient {
+    position: relative;   
+    line-height: 0;
+}
+.gradient:after {
+    content: "";
+    display: block;
+    width: 877px;
+    height: 442px; 
+    position: absolute;
+    transform: translate(-50%);
+    top: 0;  
+    left: 50%;   
+    
+    background: transparent;
+    background-image: linear-gradient(180deg, 
+    rgba(0, 0, 0, 0) 14.58%, 
+    rgba(56, 56, 56, 0.84) 100%);
+    opacity: 0.8;
+}
+.video{
+    display: none;
+
+}
 
 }
 
@@ -767,6 +890,7 @@ input{
 }
 
 
+    
 
 @media(min-width: 1440px){
     .but3{
