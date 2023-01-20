@@ -597,9 +597,23 @@ hr{
     height: 104px;
     background:none
 }
-body > footer {
+/* body > footer {
     position: sticky;
-    top: 100vh;}
+    top: 150vh;
+    
+} */
+
+
+.container {
+    display: flex;
+    min-height: 150vh;
+    flex-direction: column;
+  }
+  
+  .container-content {
+    flex: 1;
+    padding: 1.5rem 0rem;
+  }
 
 .formreg{
     text-align: center;
@@ -621,6 +635,47 @@ legend{
 .paddin{
     padding: 0px 15px
 }
+
+.radio{
+    height: 2rem;
+}
+.lab3{
+    display: inline-block;
+}
+.but4{
+    border-radius: 37px;
+    padding: 10px 36px;
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+    color:#0b0b0c;
+    
+
+}
+.but4:active{
+    background: white;
+
+}
+.pole::selection{
+    background-color: #0D5C63;
+}
+
+.sendof{
+    width: 30px;
+    height: 30px;
+    fill: #CCC;
+    stroke: #CCC;
+
+}
+.pen{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
 
 @media(min-width: 768px) {
     .card01{

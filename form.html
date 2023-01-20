@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <title>First-Class Business Consultant</title>
 </head>
-<body>
+<body class="container">
     <h1></h1>
     <header class="glo wrapper">
         <div class="connav">
@@ -45,19 +45,59 @@
             <img src="png/icn menu .icn-xs.svg" alt="Menu" width="24" height="24">
         </div>
         </header></div></div>
+        <main class="container-content">
         <div class="paddin">
-        <form class="formreg">
+        <form class="formreg" name="contact" method="POST" data-netlify="true">
             <fieldset>
                 <legend>Пользовательские данные</legend>
                 <label class="lab3">Имя
-                <input type="text" placeholder="Анастасия" required></label>
-                <label>
-                    <input type="date" required>
+                <input type="text" name="name" placeholder="Анастасия" required></label>
+                <label>Дата Рождения
+                    <input type="date" name="date" required>
                 </label>
-
+                <fieldset>
+                    <legend>Пол</legend>
+                <label class="lab3">
+                    <input class="radio" type="radio" name="pol" value="Men" required> "M"
+                    <label>
+                    <input class="radio" type="radio" name="pol" value="Women" required> "Ж"</label>
+                </label></fieldset>
+                <label>Пароль
+                <input type="password" id="userPassword"  name="password" placeholder="Не менее 5 символов" required minlength="5">
+            </label>
             </fieldset>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <div>
+                    <label class="lab3">
+                        Email:
+                        <input class="pole" type="email" name="email"  placeholder="email@address.com">
+                    </label>
+                </div>
+                <div>
+                    <label class="lab3">
+                        Телефон:
+                        <input class="pole" type="tel" name="phone" placeholder="+7(XXX) XXX XX-XX">
+                    </label>
+                </div>
+                <div>
+                    <label class="lab3">
+                        Удобный интервал для связи :
+                        <input class="pole" type="text" name="graphic"  placeholder="утро, день, вечер, ночь">
+                    </label>
+                </div>
+            </fieldset>
+            <div class="pen">
+            <div>
+            <button class="but4" type="submit">Send 
+            <img class="sendof" src="png/checklist_rtl_FILL0_wght400_GRAD0_opsz48.svg" alt="send" ></button>
+            </div>
+            <div>
+            <button class="but4" type="reset">Remove
+                <img class="sendof" src="png/replay_FILL0_wght400_GRAD0_opsz48.svg" alt="Remove"></button>
+            </div></div>
         </form></div>
-
+    </main>
         <footer>
             <div class="wrapper">
             <div class="socand">
