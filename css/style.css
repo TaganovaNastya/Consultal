@@ -245,6 +245,8 @@ button{
     color: var(--primary-color2);
     background-color: #FF7B47;
     border: 1px;
+    transition-duration: 1s;
+    transition-property: transform;
 }
 .play{
     
@@ -666,6 +668,7 @@ input:hover{
 button:hover{
 transform: scale(1.1);
 transition-duration: 1s;
+background-color: #0D5C63;
 }
 a:hover{
     text-decoration: underline;
