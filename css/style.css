@@ -809,8 +809,9 @@ a:active{
     }
 
     .slaid1{
-        background: url(/png/cover1.jpg) center no-repeat;
+    background: url(/png/cover1.jpg) center no-repeat;
     -webkit-background-size: cover ;
+    background-size: cover;
     }
     .ggrim{
     grid-template-columns: repeat(3,1fr);
